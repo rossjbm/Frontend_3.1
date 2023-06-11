@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haz tu Reseña</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> <img src="multimedia/logo.jpg" alt="HappyReads" title="HappyReads" class="logo"></a></li>
+                <li><a href="perfil.html">PERFIL</a></li>
+                <li><a href="#">EXPLORAR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>¡Crea tu propia reseña escrita!</h2>
+        <form>
+            <fieldset>
+                <legend>Datos de lectura</legend>
+                <div>
+                    <label for="titulo">Título del libro</label>
+                    <input type="text" required name="titulo" placeholder="ingresa el titulo...">
+                </div>
+                <div>
+                    <label for="autor">Autor del libro</label>
+                    <select required name="autor">
+                        <option value="ColleenHoover">Colleen Hoover</option>
+                        <option value="MarissaMeyer">Marissa Meyer</option>
+                        <option value="NeilGaiman">Neil Gaiman</option>
+                        <option value="DotHutchison">Dot Hutchison</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fecha_culminación">Culminación de la lectura</label>
+                    <input type="date" name="fecha_culminación">
+                </div>
+                <fieldset>
+                    <legend>¡Califícalo!</legend>
+                    <input type="radio" name="calificacion" value="1">
+                    <label for="calificacion">1 &#9733</label>
+                    <input type="radio" name="calificacion" value="2">
+                    <label for="calificacion">2 &#9733</label>
+                    <input type="radio" name="calificacion" value="3">
+                    <label for="calificacion">3 &#9733</label>
+                    <input type="radio" name="calificacion" value="4">
+                    <label for="calificacion">4 &#9733</label>
+                    <input type="radio" name="calificacion" value="5">
+                    <label for="calificacion">5 &#9733</label>
+                </fieldset>
+                <div>
+                    <label for="resena">Escribe tu reseña</label>
+                    <br>
+                    <textarea cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena" required></textarea>
+                </div>
+                <div>
+                    <label>¡Publica tu Reseña!</label>
+                    <input type="submit">
+                </div>
+                
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>¡Conoce está Comunidad en Redes!</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>Todos los derechos reservados &copy HappyReads 2030</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
+
