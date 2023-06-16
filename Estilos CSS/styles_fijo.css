@@ -1,0 +1,143 @@
+/*CUERPO*/
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right,  #FFF8D6, #A4D0A4, #F7E1AE)
+}
+main {
+    padding-top: 11vh;
+    display: inline-block;
+}
+
+/*MENU DE NAVEGACIÓN*/
+header nav {
+    background-color: white;
+    height: 11%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+.nav-elemento {
+    vertical-align: middle;
+    display: inline-block;
+    width: 32vw;
+}
+ /*logo con dirección a inicio*/
+#logo {
+    width: 11em;
+    height: 3em;
+    float: left;
+    margin-left: 2em;
+}
+ /*barra de busqueda*/
+.nav-elemento button{
+    float: right;
+    margin: 17px 2px;
+    height: 35px;
+    border: none;
+}
+.nav-elemento button:hover {
+    outline: 1px solid rgb(0, 0, 0);
+    border-radius: 1em;
+}
+.nav-elemento button img {
+    width: 2em;
+    height: 2em;
+}
+.nav-elemento input[type=text] {
+    /* float: right; */
+    background-color:#b1e1b1;
+    border: none;
+    border-radius: 1em;
+    font-size: 17px;
+    padding: 1em;
+    width: 80%;
+    height: 1em;
+    margin: 1em 0em;  
+}
+.nav-elemento input[type=text]:focus:hover {
+    outline: 1px solid rgb(0, 0, 0);
+}
+.nav-elemento input[type=text]:hover {
+    border: 1px solid rgb(136, 158, 147);
+}
+.nav-alineado { 
+    text-align: right;
+}
+ /*dirección al perfil*/
+#perfil {
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 1em;
+    padding: 4px;
+}
+#perfil:hover {
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+/*PIE DE PAGINA*/
+
+
+
+
+
+
+
+
+/* 
+.librosInicio {
+    width: 10%;
+    height: 80%;
+}
+.librosListas {
+    width: 5%;
+    height: 30%;
+}
+.libro {
+    width: 30%;
+    height: 100%;
+}
+.perfil {
+    width: 3%;
+    height: 3%;
+    border-radius: 50%;
+}
+.perfilPrincipal {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.autorFoto {
+    width: 10%;
+    border-radius: 25%;
+    
+}
+.logo {
+    width: 15%;
+    height: 7%;
+}
+.novedades {
+    width: 20%;
+    height: 150px;
+    border-radius: 3%;
+    border: 1px solid black;
+}
+table {
+    width: 70%;
+    border: 1px solid black;
+}
+td, th {
+    width: 10%;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+th {
+    background-color: rgb(201, 237, 190);
+} */
