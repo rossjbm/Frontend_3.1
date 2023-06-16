@@ -19,6 +19,37 @@ h2 {
     font-family: 'Euphoria Script', cursive;
     text-align: center;
 }
+/*BOTOON*/
+.form-grupo-boton {
+    text-align: center;
+    margin: 2em 0em .5em;
+}
+.form-titulo-publicar {
+    font-size: 2.5em;
+    font-family: 'Euphoria Script', cursive;
+}
+.form-titulo-publicar span {
+    font-size: .7em;
+}
+.form-boton {
+    border-radius: 1em;
+    border: none;
+    padding: 10px;
+    background-color: #f2a13f;
+    width: 12vw;
+    height: 10vh;
+    margin-left: 8px;
+    font-size: 1.4em;
+    color: #000;
+    font-family: 'Faustina', serif;
+    transition: background-color .5s , color .5s ,  outline .5s , box-shadow .5s;
+}
+.form-boton:hover {
+    background-color: #000;
+    color: #fff;
+    outline: 2px solid #f2a13f;
+    box-shadow: 0px 0px 15px 8px #f2a13f;
+}
 
 /*FORMULARIO RESEÑAR*/
 .form-grupo {
@@ -80,9 +111,8 @@ h2 {
     text-align: center;
     margin: 0px auto 15px;
 }
-.form-subgrupo1 label , .form-subgrupo1 legend, .form-subgrupo-titulo {
+.form-subgrupo1 label , .form-subgrupo1 legend, .form-subgrupo-titulo  {
     font-size: 2em;
     font-family: 'Euphoria Script', cursive;
 }
 
-/*BOTOON*/
