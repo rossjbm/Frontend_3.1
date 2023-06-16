@@ -1,0 +1,95 @@
+/*CUERPO*/
+main {
+    width: 100%;
+    height: 100%;
+}
+main section , main aside {
+    display: inline-block;
+}
+
+/*LISTAS DE LECTURA*/
+
+
+
+/*ASIDE CONTENIDO DE PERFIL*/
+aside {
+    width: 35vw;
+    float: right;
+    height: 100%;
+    position: sticky;
+    bottom: 25vh;
+    background-color: #fff8d660;
+    padding: 2em;  
+}
+aside:hover {
+    animation-name: foto-perfil;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite ;
+}
+    /*datos de usuario*/
+aside h2 , aside p {
+    font-family: 'Faustina', serif;
+    color: #1b1b1b;
+    text-align: center;
+}
+aside h2 {
+    font-size: 3em;
+    margin: auto;
+}
+.perfil-dato1 {
+    font-size: 1em;
+    margin: auto;
+}
+aside span {
+    font-size: 17px;
+}
+.perfil-dato2 {
+    background-color: #f4f9b4c6;
+    border-radius: 1em;
+    padding: 10px;
+    margin-top: 1.5em;
+}
+.perfil-dato2 h3 {
+    margin: auto;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 2em;
+}
+    /*foto de perfil*/
+.perfil-foto {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil-foto img {
+    width: 20vw;
+    height: 43vh;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transition: all 1.5s;
+}
+.perfil-foto img:hover {
+    width: 23vw;
+    height: 47vh;
+    border: 3px solid #1b1b1b;
+    box-shadow: 0 0 10px 3px #000;
+}
+    /*animación*/
+@keyframes foto-perfil {
+    0% {
+        background-color: #f7f9d7de
+    }
+    25% {
+        background-color: #f4f8bfde
+    }
+    50% {
+        background-color: #d6f593b0
+    }
+    75% {
+        background-color: #f4f8bfde
+    }
+    100% {
+        background-color:  #f7f9d1de
+    }
+}

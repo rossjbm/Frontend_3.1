@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right,  #FFF8D6, #A4D0A4, #F7E1AE)
+    background: linear-gradient(to bottom right, #F7E1AE, #A4D0A4, #F7E1AE)
 }
 main {
     padding-top: 11vh;
@@ -28,10 +28,8 @@ header nav {
 }
  /*logo con dirección a inicio*/
 #logo {
-    width: 11em;
-    height: 3em;
-    /* width: 13vw;
-    height: 8vh; */
+    width: 13vw;
+    height: 8vh;
     float: left;
     margin-left: 2em;
 }
@@ -72,10 +70,8 @@ header nav {
 }
  /*dirección al perfil*/
 #perfil {
-    width: 40px;
-    height: 40px;
-    /* width: 4vw;
-    height: 7vh; */
+    width: 45px;
+    height: 45px;
     float: right;
     border-radius: 1em;
     padding: 4px;
@@ -85,7 +81,37 @@ header nav {
 }
 
 /*PIE DE PAGINA*/
-
+footer {
+    width: 100vw;
+    height: 25vh;
+    background: linear-gradient(0.25turn, #ffffff, #f7e9c7, #ffffff,  #f7e9c7, #ffffff,  #f7e9c7,#ffffff,  #f7e9c7);
+    display: block;
+    padding-top: 5px;
+    margin-top: 1em;
+}
+footer p , footer nav {
+    text-align: center;
+}
+footer img {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+    margin: auto 10px;
+    transition: all 0.6s;
+}
+footer img:hover {
+    width: 3em;
+    height: 3em;
+}
+.footer-contacto {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 30px; 
+    margin-bottom: 5px;
+}
+.footer-copy {
+    font-family: 'Faustina', serif;
+    font-size: 1em;
+}
 
 
 

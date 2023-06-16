@@ -1,7 +1,7 @@
 /*SECCIÓN DE LIBROS*/
 main {
     width: 68%;
-    height: 50%;
+    height: 100%;
     padding-left: 15px;
 }
 section .libro {
@@ -44,6 +44,24 @@ section .libro {
 .libro-opcion-contenido {
     position: absolute;
     top: 15%;
+}
+.libro-opcion-contenido a {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 25px; 
+    color: #000;
+    text-decoration: none;
+    transition: font-size 0.4s;
+}
+.libro-opcion-contenido a:hover {
+    font-size: 28px; 
+}
+.libro-opcion-contenido p {
+    font-family: 'Faustina', serif;
+    font-size: 1em;
+    color: #000;
+}
+.libro-opcion-contenido span {
+    font-size: 18px;
 }
     /*boton para mostrar más resultados*/
 .libro-vermas {
@@ -95,9 +113,10 @@ section .libro {
 aside {
     width: 30vw;
     float: right;
-    height: 100vh;
-    position: sticky;
+    height: 130vh;
+    position: relative;
     top: 11vh;
+    bottom: 20vh;
     background-color: #fff8d646;
 }
 aside article , .titulo-aside {
