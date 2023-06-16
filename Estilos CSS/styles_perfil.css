@@ -55,8 +55,8 @@ td a {
 tr .lista-centrada {
     text-align: center;
 }
-tr span {
-    font-size: small;
+.star-span {
+    font-size: 18px;
     color: darkorange;
 }
 

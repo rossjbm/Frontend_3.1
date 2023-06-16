@@ -45,6 +45,10 @@ section .libro {
     position: absolute;
     top: 15%;
 }
+.star-span {
+    font-size: 18px;
+    color: darkorange;
+}
 .libro-opcion-contenido a {
     font-family: 'Euphoria Script', cursive;
     font-size: 25px; 
