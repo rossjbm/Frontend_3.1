@@ -8,7 +8,69 @@ main section , main aside {
 }
 
 /*LISTAS DE LECTURA*/
+.lista {
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin: 1em 1.5em;
+}
+table {
+    border: 1px solid #000;
+    border-radius: 1em;
+    padding: 1em;
+    width: 60vw;
+    height: 50%;
+    background-color: #f4f9b4c6;
+}
+th , td {
+    height: 5vh;
+}
+th {
+    border-bottom: 1px solid #343434;
+    text-align: center;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 2em;
+    margin: auto;
+}
+th:hover {
+    color:#fff;
+    background-color: #5c724b;
+    border-radius: 1.5em;
+}
+td:hover {
+    background-color: #d7edc6;
+}
+td {    
+    border-left: 1px solid #343434;
+    padding-left: 8px;
+    margin-bottom: 5px;
+    width: 10vw;
+    font-family: 'Faustina', serif;
+    font-size: 1em;
+}
+td a {
+    color: #000;
+    text-decoration: none;
+}
+tr .lista-centrada {
+    text-align: center;
+}
+tr span {
+    font-size: small;
+    color: darkorange;
+}
 
+/*TÍTULOS*/
+.lista-titulo {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 3em;
+    margin-left: 1em;
+}
+.lista h3 {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 2.5em;
+    text-align: center;
+}
 
 
 /*ASIDE CONTENIDO DE PERFIL*/
