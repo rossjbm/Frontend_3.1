@@ -14,7 +14,7 @@ main {
 
 /*MENU DE NAVEGACIÓN*/
 header nav {
-    background-color: white;
+    background-color: #fff;
     height: 11vh;
     width: 100vw;
     position: fixed;
@@ -98,7 +98,7 @@ footer img {
     height: 2em;
     object-fit: contain;
     margin: auto 10px;
-    transition: all 0.6s;
+    transition: width 0.6s, height 0.6s;
 }
 footer img:hover {
     width: 3em;
