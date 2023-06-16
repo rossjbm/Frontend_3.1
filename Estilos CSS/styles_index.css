@@ -3,12 +3,6 @@ main {
     width: 68%;
     height: 50%;
     padding-left: 15px;
-    padding-right: 15px;
-    /* margin: 1em;
-    background-color: #d9d2ab28;
-    border-radius: 1em;
-    width: 70vw;
-    height: 50vh; */
 }
 section .libro {
     display: block; 
@@ -16,61 +10,92 @@ section .libro {
     height: 45%;
 }
 .libro-opcion {
-    background-color: white;
-    padding: 15px;
+    background: linear-gradient(to bottom right,  #f9efbf59, #ffffff6a);
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 1em;
+    width: 28vw;
+    display: inline-block;
 
 }
+/*SECCION DE EXPLORAR*/
+    /*titulo de la seccion*/
+.libro h2 {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 3em; 
+    margin: 20px auto;
+}
+    /*contenido de cada libro de cada sección*/
 .libro-opcion div {
     display: inline-block;
-    
+    margin: 5px;
 }
-.libro-opcion-contenido {
-    background-color: white;
-}
+        /*imagen del libro*/
 .libro-opcion img {
-    width: 9em;
-    height: 14em;
+    width: 12vw;
+    height: 38vh;
     border-radius: 15px;
     border: 1px solid #ffffffa1;
     object-fit: cover;
 }
-
-/* .titulo-libro-section {
-    font-family: 'Euphoria Script', cursive;
-    font-size: 3em; 
-    margin: auto;
-    height: 20%;
+        /*contenido textual*/
+.libro-opcion-contenido {
+    position: absolute;
+    top: 15%;
 }
-
-.libro-opcion {
+    /*boton para mostrar más resultados*/
+.libro-vermas {
     display: inline-block;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #617A55;
-    width: 40%;
-    height: 80%;
+    position: relative;
+    width: 3vw;
+    height: 30vh;
+    margin-left: 5px;
+    margin-right: 15px;
 }
-.libro-opcion:hover {
-
+.icono-vermas {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
 }
-.libro-opcion-img {
-    width: 9em;
-    height: 16em;
-    border-radius: 15px;
-    border: 1px solid #ffffffa1;
+.icono-vermas button {
+    border-radius: 1em;
+    background-color: #ffffff;
+    border: 1px solid  #617A55;
+    width: 4vw;
+    height: 7vh;
+    cursor: pointer;
 }
-
-
-
-
-
+.icono-vermas button:hover {
+    outline: 1px solid rgb(0, 0, 0);
+    border: none;
+    background-color: #f6edbe;
+}
+.icono-vermas span {
+    color: #000;
+    font-size: 3em;
+}
+/*CONTENIDO EXTRA DE EXPLORAR*/
+#lote2 {
+    display: none;
+}
+#lote1 {
+    display: block;
+}
+#lote4 {
+    display: none;
+}
+#lote3 {
+    display: block;
+}
 
 
 /*ASIDE*/
 aside {
-    width: 30%;
+    width: 30vw;
     float: right;
-    height: 100%;
+    height: 100vh;
     position: sticky;
     top: 11vh;
     background-color: #fff8d646;
@@ -80,8 +105,8 @@ aside article , .titulo-aside {
 }
     /*imagen aside*/
 aside figure img {
-    width: 21em;
-    height: 9em;
+    width: 24vw;
+    height: 24vh;
     border: 1px solid #617A55;
     border-radius: 5px;
 }
@@ -102,8 +127,8 @@ article p , figcaption {
 }
     /*transicion y ubicacion de noticias*/
 .anuncio-img , .anuncio-context {
-    width: 21em;
-    height: 11em;
+    width: 22vw;
+    height: 28vh;
     display: block;
 }
 .anuncio-img {

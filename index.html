@@ -22,8 +22,12 @@
                 <!--para el resto-->
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap" rel="stylesheet">
 
+    <!--estrellita <span class="material-symbols-outlined">star_rate</span> -->
+
 </head>
 <body>
+    <!--conexion con javascript-->
+    <script src="Scripts JS/fuctions.js"></script>
     <header>
         <nav>
             <div class="nav-elemento">            
@@ -43,78 +47,190 @@
         <section class="libro">
             <h2 class="titulo-libro-section">Quizás te puedan gustar...</h2>
 
-            <section class="libro-opcion">
-                <div>
-                    <a href="#">
-                        <img src="multimedia/libro1.jpg" alt="Coralines de Neil Gaiman" title="Coraline">
-                    </a>
-                </div>
-                <div class="libro-opcion-contenido">
-                    <a href="#" class="prue">Coraline</a>
-                    <p>de <b>Neil Gaiman</b></p>
-                    <p>Media de <b>4.10</b>/5 &#9733</p>
-                    <p>Publicado el 2 de julio de 2002</p>
+            <section id="lote1" >
+                <section class="libro-opcion">
+                    <div>
+                        <a href="#">
+                            <img src="multimedia/libro1.jpg" alt="Coralines de Neil Gaiman" title="Coraline">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="#" class="prue">Coraline</a>
+                        <p>de <b>Neil Gaiman</b></p>
+                        <p>Media de <b>4.10</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 2 de julio de 2002</p>
+                    </div>
+                </section>
+                <section class="libro-opcion">
+                    <div>
+                        <a href="#">
+                            <img src="multimedia/libro2.jpg" alt="El Jardín de las Mariposas de Dot Hutchison" title="El Jardín de las Mariposas">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="#">El Jardín de las Mariposas</a>
+                        <p>de <b>Dot Hutchison</b></p>
+                        <p>Media de <b>4.08</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 15 de febrero del 2018</p>
+                    </div>
+                </section>
+                <div class="libro-vermas">
+                    <div class="icono-vermas">
+                        <button onclick="mostrarLote2()"><span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
                 </div>
             </section>
 
-            <section class="libro-opcion">
-                <div>
-                    <a href="#">
-                        <img src="multimedia/libro2.jpg" alt="El Jardín de las Mariposas de Dot Hutchison" title="El Jardín de las Mariposas">
-                    </a>
+            <section id="lote2">
+                <div class="libro-vermas">
+                    <div class="icono-vermas">
+                        <button onclick="mostrarLote1()"><span class="material-symbols-outlined">arrow_back</span></button>
+                    </div>
                 </div>
-                <div>
-                    <a href="#">El Jardín de las Mariposas</a>
-                    <p>de <b>Dot Hutchison</b></p>
-                    <p>Media de <b>4.08</b>/5 &#9733</p>
-                    <p>Publicado el 15 de febrero del 2018</p>
-                </div>
+                <section class="libro-opcion">
+                    <div>
+                        <a href="#">
+                            <img src="multimedia/libro1.jpg" alt="Coralines de Neil Gaiman" title="Coraline">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="#" class="prue">Coraline</a>
+                        <p>de <b>Neil Gaiman</b></p>
+                        <p>Media de <b>4.10</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 2 de julio de 2002</p>
+                    </div>
+                </section>
+                <section class="libro-opcion">
+                    <div>
+                        <a href="#">
+                            <img src="multimedia/libro2.jpg" alt="El Jardín de las Mariposas de Dot Hutchison" title="El Jardín de las Mariposas">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="#">El Jardín de las Mariposas</a>
+                        <p>de <b>Dot Hutchison</b></p>
+                        <p>Media de <b>4.08</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 15 de febrero del 2018</p>
+                    </div>
+                </section>
             </section>
-            <div class="icono-vermas">
-                <span class="material-symbols-outlined">arrow_forward_ios</span>
-            </div>
-            
         </section>
+
         <section class="libro">
             <h2>Estás leyendo...</h2>
-            <section>
-                <div>
-                    <a href="libro.html">
-                        <img class="librosInicio" src="https://i.pinimg.com/564x/58/98/55/58985550980582a7fce8da3a5e960ded.jpg" alt="Cinder de Marisa Meyer" title="Cinder">
-                    </a>
-                </div>
-                <div>
-                    <a href="libro.html">Cider</a>
-                    <p>de <b>Marissa Meyer</b></p>
-                    <p>Media de <b>4.10</b>/5 &#9733</p>
-                    <p>Publicado el 2 de julio de 2002</p>
+            <section id="lote3" >
+                <section class="libro-opcion">
+                    <div>
+                        <a href="libro.html">
+                            <img src="https://i.pinimg.com/564x/58/98/55/58985550980582a7fce8da3a5e960ded.jpg" alt="Cinder de Marisa Meyer" title="Cinder">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="libro.html">Cider</a>
+                        <p>de <b>Marissa Meyer</b></p>
+                        <p>Media de <b>4.10</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 3 de enero de 2012</p>
+                    </div>
+                </section>
+                <section class="libro-opcion">
+                    <div>
+                        <a href="#">
+                            <img src="https://i.pinimg.com/564x/be/73/04/be7304a93c58f56a40d71626efd91fb8.jpg" alt="Verity de Colleen Hoover" title="Verity">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="#">Verity</a>
+                        <p>de <b>Colleen Hoover</b></p>
+                        <p>Media de <b>4.36</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 07 de diciembre del 2018</p>
+                    </div>
+                </section>
+                <div class="libro-vermas">
+                    <div class="icono-vermas">
+                        <button onclick="mostrarLote4()"><span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
                 </div>
             </section>
-
-            <section>
-                <div>
-                    <a href="#">
-                        <img class="librosInicio" src="https://i.pinimg.com/564x/be/73/04/be7304a93c58f56a40d71626efd91fb8.jpg" alt="Verity de Colleen Hoover" title="Verity">
-                    </a>
+            <section id="lote4">
+                <div class="libro-vermas">
+                    <div class="icono-vermas">
+                        <button onclick="mostrarLote3()"><span class="material-symbols-outlined">arrow_back</span></button>
+                    </div>
                 </div>
-                <div>
-                    <a href="#">Verity</a>
-                    <p>de <b>Colleen Hoover</b></p>
-                    <p>Media de <b>4.36</b>/5 &#9733</p>
-                    <p>Publicado el 07 de diciembre del 2018</p>
-                </div>
+                <section class="libro-opcion">
+                    <div>
+                        <a href="#">
+                            <img src="multimedia/libro1.jpg" alt="Coralines de Neil Gaiman" title="Coraline">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="#" class="prue">Coraline</a>
+                        <p>de <b>Neil Gaiman</b></p>
+                        <p>Media de <b>4.10</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 2 de julio de 2002</p>
+                    </div>
+                </section>
+                <section class="libro-opcion">
+                    <div>
+                        <a href="#">
+                            <img src="multimedia/libro2.jpg" alt="El Jardín de las Mariposas de Dot Hutchison" title="El Jardín de las Mariposas">
+                        </a>
+                    </div>
+                    <div class="libro-opcion-contenido">
+                        <a href="#">El Jardín de las Mariposas</a>
+                        <p>de <b>Dot Hutchison</b></p>
+                        <p>Media de <b>4.08</b>/5 
+                            <span class="material-symbols-outlined">hotel_class</span>
+                        </p>
+                        <p>Publicación 
+                            <span class="material-symbols-outlined">edit_document</span>
+                        </p>
+                        <p>el 15 de febrero del 2018</p>
+                    </div>
+                </section>
             </section>
-            <div>
-                <a href="#">Ver más</a>
-            </div>
-
         </section>
     </main>
     <aside>
         <h3 class="titulo-aside">Noticias y Novedades</h3>
         <article>
             <h4>Se llegan Nuevas Publicaciones</h4>
-            <figure class="anuncio-img , anuncio-transicion">
+            <figure class="anuncio-img">
                 
                 <img src="https://www.lavanguardia.com/files/image_449_220/files/fp/uploads/2021/04/22/6081867862f83.r_d.960-540-2339.png" alt="Publicaciones 2030">
                 
@@ -127,7 +243,7 @@
         <hr>
         <article>
             <h4>Luz Noceda saca su Autobiografía</h4>
-            <figure class="anuncio-img , anuncio-transicion">
+            <figure class="anuncio-img">
                 <img src="multimedia/novedades.png" alt="Autobiografía La verdad tras un búho">
                 <figcaption><b><i>"La verdad tras un búho"</i> de Luz Noceda</b></figcaption>
             </figure>

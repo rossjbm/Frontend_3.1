@@ -15,7 +15,7 @@ main {
 /*MENU DE NAVEGACIÓN*/
 header nav {
     background-color: white;
-    height: 11%;
+    height: 11vh;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -30,6 +30,8 @@ header nav {
 #logo {
     width: 11em;
     height: 3em;
+    /* width: 13vw;
+    height: 8vh; */
     float: left;
     margin-left: 2em;
 }
@@ -41,7 +43,7 @@ header nav {
     border: none;
 }
 .nav-elemento button:hover {
-    outline: 1px solid rgb(0, 0, 0);
+    outline: 1px solid #000;
     border-radius: 1em;
 }
 .nav-elemento button img {
@@ -60,7 +62,7 @@ header nav {
     margin: 1em 0em;  
 }
 .nav-elemento input[type=text]:focus:hover {
-    outline: 1px solid rgb(0, 0, 0);
+    outline: 1px solid #000;
 }
 .nav-elemento input[type=text]:hover {
     border: 1px solid rgb(136, 158, 147);
@@ -72,12 +74,14 @@ header nav {
 #perfil {
     width: 40px;
     height: 40px;
+    /* width: 4vw;
+    height: 7vh; */
     float: right;
     border-radius: 1em;
     padding: 4px;
 }
 #perfil:hover {
-    outline: 1px solid rgb(0, 0, 0);
+    outline: 1px solid #000;
 }
 
 /*PIE DE PAGINA*/
