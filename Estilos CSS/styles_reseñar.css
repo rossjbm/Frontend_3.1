@@ -1,0 +1,88 @@
+/*CUERPOO*/
+main {
+    width: 100%;
+    height: 100%;
+}
+form {
+    margin: auto auto 2em;
+    padding: 3em;
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 3em;
+    box-shadow: 0px 0px 20px 0px #343434;
+}
+
+/*TITULO*/
+h2 {
+    font-size: 3em;
+    font-family: 'Euphoria Script', cursive;
+    text-align: center;
+}
+
+/*FORMULARIO RESEÑAR*/
+.form-grupo {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+}
+    /*primera seccion de preguntas*/
+.form-subgrupo1 label , .form-subgrupo1 input , .form-subgrupo1 select {
+    display: block;
+}
+.form-subgrupo1 input , .form-subgrupo1 select {
+    margin: 10px auto 25px;
+}
+.form-subgrupo1-input {
+    padding: 10px;
+    font-size: 1.5em;
+}
+    /*segunda seccion de preguntas*/
+.form-calificacion {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px auto 25px;
+    padding: 12px;
+}
+.form-calificacion span {
+    color: darkorange;
+    font-size: 20px;
+}
+.form-subgrupo2 {
+    text-align: center;
+}
+.form-subgrupo2 textarea{
+    height: 27vh;
+    padding: 10px;
+    font-size: 1em;
+}
+    /*extras*/
+.form-subgrupo1-input:focus , .form-subgrupo2 textarea:focus{
+    border: none;
+    outline: 2px solid #000;
+    background-color: #faefb4;
+}
+.form-subgrupo1-input:hover , .form-subgrupo2 textarea:hover , .form-calificacion:hover{
+    background-color: #faefb4;
+}
+.form-subgrupo1-input , .form-calificacion , .form-subgrupo2 textarea {
+    width: 30vw;
+    font-family: 'Faustina', serif;
+    border-radius: 2em;
+    border: 1px solid #343434;
+}
+.form-subgrupo1-input::placeholder , .form-subgrupo2 textarea::placeholder{
+    color: #000;
+}
+
+    /*títulos*/
+.form-subgrupo1 label , .form-subgrupo-titulo{     
+    text-align: center;
+    margin: 0px auto 15px;
+}
+.form-subgrupo1 label , .form-subgrupo1 legend, .form-subgrupo-titulo {
+    font-size: 2em;
+    font-family: 'Euphoria Script', cursive;
+}
+
+/*BOTOON*/

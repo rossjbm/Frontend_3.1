@@ -7,81 +7,98 @@
 
     <title>Haz tu Reseña</title>
 
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--icono de página-->
+    <link rel="icon" href="multimedia/logo.ico.png">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!--conexion con css-->
+    <link href="Estilos CSS/styles_fijo.css" rel="stylesheet" type="text/css">
+    <link href="Estilos CSS/styles_reseñar.css" rel="stylesheet" type="text/css">
+    <!--tipografía-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <!--para los titulos-->
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+                <!--para el resto-->
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap" rel="stylesheet">
+
+    <!--estrellita <span class="material-symbols-outlined">star_rate</span> -->
+
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html"> <img src="multimedia/logo.jpg" alt="HappyReads" title="HappyReads" class="logo"></a></li>
-                <li><a href="perfil.html">PERFIL</a></li>
-                <li><a href="#">EXPLORAR</a></li>
-            </ul>
+            <div class="nav-elemento">            
+                <a href="index.html"> <img src="multimedia/logoo.png" alt="HappyReads" title="HappyReads" id="logo"></a>
+            </div>
+            <div class="nav-elemento , nav-alineado">
+                <input type="text" placeholder="Busca un libro...">
+                <button><img src="multimedia/lupa.png" ></button>
+            </div>
+            <div class="nav-elemento">
+                <a href="perfil.html"><img src="multimedia/usuario.png" id="perfil"></a>
+            </div> 
         </nav>
     </header>
     <main>
         <h2>¡Crea tu propia reseña escrita!</h2>
         <form>
-            <fieldset>
-                <legend>Datos de lectura</legend>
-                <div>
-                    <label for="titulo">Título del libro</label>
-                    <input type="text" required name="titulo" placeholder="ingresa el titulo...">
+            <div class="form-grupo">
+                <div class="form-subgrupo1">
+                    <label for="titulo"><b>Título del libro</b></label>
+                    <input class="form-subgrupo1-input" type="text" required name="titulo" placeholder="Ingresa el título...">
                 </div>
-                <div>
-                    <label for="autor">Autor del libro</label>
-                    <select required name="autor">
+                <div class="form-subgrupo1">
+                    <label for="autor"><b>Autor del libro</b></label>
+                    <select class="form-subgrupo1-input" required name="autor">
                         <option value="ColleenHoover">Colleen Hoover</option>
                         <option value="MarissaMeyer">Marissa Meyer</option>
                         <option value="NeilGaiman">Neil Gaiman</option>
                         <option value="DotHutchison">Dot Hutchison</option>
                     </select>
                 </div>
-                <div>
-                    <label for="fecha_culminación">Culminación de la lectura</label>
-                    <input type="date" name="fecha_culminación">
+                <div class="form-subgrupo1">
+                    <label for="fecha_culminación"><b>Culminación de la lectura</b></label>
+                    <input class="form-subgrupo1-input" type="date" name="fecha_culminación">
                 </div>
-                <fieldset>
-                    <legend>¡Califícalo!</legend>
-                    <input type="radio" name="calificacion" value="1">
-                    <label for="calificacion">1 &#9733</label>
-                    <input type="radio" name="calificacion" value="2">
-                    <label for="calificacion">2 &#9733</label>
-                    <input type="radio" name="calificacion" value="3">
-                    <label for="calificacion">3 &#9733</label>
-                    <input type="radio" name="calificacion" value="4">
-                    <label for="calificacion">4 &#9733</label>
-                    <input type="radio" name="calificacion" value="5">
-                    <label for="calificacion">5 &#9733</label>
-                </fieldset>
-                <div>
-                    <label for="resena">Escribe tu reseña</label>
+            </div>
+            <div class="form-grupo">
+                <div class="form-subgrupo2">
+                    <p class="form-subgrupo-titulo"><b>¡Califícalo!</b></p>
+                    <div class="form-calificacion">
+                        <input type="radio" name="calificacion" value="1">
+                        <label for="calificacion">1 <span class="material-symbols-outlined">star_rate</span></label>
+                        <input type="radio" name="calificacion" value="2">
+                        <label for="calificacion">2 <span class="material-symbols-outlined">star_rate</span></label>
+                        <input type="radio" name="calificacion" value="3">
+                        <label for="calificacion">3 <span class="material-symbols-outlined">star_rate</span></label>
+                        <input type="radio" name="calificacion" value="4">
+                        <label for="calificacion">4 <span class="material-symbols-outlined">star_rate</span></label>
+                        <input type="radio" name="calificacion" value="5">
+                        <label for="calificacion">5 <span class="material-symbols-outlined">star_rate</span></label>
+                    </div>
+                </div>
+                <div class="form-subgrupo2">
+                    <label class="form-subgrupo-titulo" for="resena"><b>¡Escribe tu reseña!</b></label>
                     <br>
                     <textarea cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena" required></textarea>
                 </div>
-                <div>
-                    <label>¡Publica tu Reseña!</label>
-                    <input type="submit">
-                </div>
-                
-            </fieldset>
+            </div>
+            <div>
+                <label>¡Publica tu Reseña!</label>
+                <input type="submit">
+            </div>
+            
         </form>
     </main>
     <footer>
-        <div>
-            <p>¡Conoce está Comunidad en Redes!</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <p>Todos los derechos reservados &copy HappyReads 2030</p>
-        </div>
-        
+        <p class="footer-contacto">¡Conoce nuestra Comunidad en Redes!</p>
+        <nav>
+            <a href="#"><img src="multimedia/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="multimedia/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="multimedia/twitter.png" alt="twitter"></a>    
+        </nav>
+        <p class="footer-copy">Todos los derechos reservados &copy HappyReads 2030</p>
     </footer>
 </body>
 </html>
