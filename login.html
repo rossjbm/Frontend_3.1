@@ -22,6 +22,9 @@
 
 </head>
 <body>
+        <!--conexion con javascript-->
+        <script src="Scripts JS/fuctions.js"></script>
+
     <header>
         <nav>
             <img src="multimedia/logoo.png" alt="HappyReads" title="HappyReads" id="logo">
@@ -34,19 +37,20 @@
                 <p><i>"El lugar donde podrás gestionar y compartir tus lecturas..."</i></p>
             </section>
             <section class="principal-form">
-                <form method="post">
+                <form id="login">
                     <h2>Iniciar Sesión</h2>
                     <div>
                         <label for="usuario_unico"><b>Ingresa tu nombre de usuario:</b></label>
-                        <input type="text" placeholder="Escribe tu usuario único...">
+                        <input id="usuario_unico" type="text" placeholder="Escribe tu usuario único...">
                     </div>
                     <div>
                         <label for="contrasena"><b>Ingresa tu cotraseña:</b></label>
-                        <input type="password" placeholder="Escribe tu contraseña...">
+                        <input id="contrasena" type="password" placeholder="Escribe tu contraseña...">
                     </div>
                     <div class="principal-form-boton">
-                        <button>INGRESAR</button>
+                        <button type="submit">INGRESAR</button>
                     </div>
+
                 </form>
             </section>
         </section>
