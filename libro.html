@@ -41,21 +41,29 @@
     
     <main>
         <section class="libro-resenas">
-            <section>
+            <section class="libro-resenas-publica">
                 <h3>¡Anímate a dar tu opinión!</h3>
-                <button> <a href="reseñar.html">Añadir Reseña</a> </button>
+                <a href="reseñar.html"><button class="resenas-boton"> Añadir Reseña</button></a> 
             </section>
-            <section>
+            <section class="libro-resenas-todas">
                 <h3>¡Reseñas de los Lectores!</h3>
-                <div>
-                    <img src="multimedia/perfil2.jpg" alt="Lector" class="perfil">
-                    <span><b>Grup Felipe</b> le ha dado 3/5 &#9733</span>
-                    <p>Tiene muy buena historia, diversos personajes y una trama clara. Sin embargo, las escenas de acción me parecen estancadas, y complicadas de leer, además, en un inicio todo se vuelve muy poco ligero de leer.</p>
+                <div class="libro-resenas-todas-usuario">
+                    <div class="libro-resenas-todas-img">
+                        <img src="multimedia/perfil2.jpg" alt="Lector" class="perfil">
+                    </div>
+                    <div class="libro-resenas-todas-datos">
+                        <span class="usuario"><b>Grup Felipe</b> le ha dado 3 / 5  <span class="material-symbols-outlined , star-span">hotel_class</span></span>
+                        <p>Tiene muy buena historia, diversos personajes y una trama clara. Sin embargo, las escenas de acción me parecen estancadas, y complicadas de leer, además, en un inicio todo se vuelve muy poco ligero de leer.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="libro-resenas-todas-usuario">
+                    <div class="libro-resenas-todas-img">
                     <img src="multimedia/perfil3.jpg" alt="Lector" class="perfil">
-                    <span><b>Edni Libros</b> le ha dado 5/5 &#9733</span>
-                    <p>Un libro extraordinario. Los personajes son lo mejor, al ser de matices grises es imposible no encariñarse con ellos, especialmente la protagonista. El desarrollo del mundo es muy interesante. 100% recomendado, si le dan una oportunidad no se arrepentirán.</p>
+                    </div>
+                    <div class="libro-resenas-todas-datos">
+                        <span class="usuario"><b>Edni Libros</b> le ha dado 5 / 5  <span class="material-symbols-outlined , star-span">hotel_class</span></span>
+                        <p>Un libro extraordinario. Los personajes son lo mejor, al ser de matices grises es imposible no encariñarse con ellos, especialmente la protagonista. El desarrollo del mundo es muy interesante. 100% recomendado, si le dan una oportunidad no se arrepentirán.</p>
+                    </div>
                 </div>
                 
             </section>
@@ -68,7 +76,7 @@
                 </div>
                 <div class="libro-info-datos">
                     <p>escrito por <b id="libro-info-datos-autor">Marissa Meyer</b></p>
-                    <p>Calificación media de: <b>4.10</b>/ 5 &#9733</p>
+                    <p>Calificación media de: <b>4.10</b>/ 5  <span class="material-symbols-outlined , star-span">hotel_class</span></p>
                     <p>Datos extra:</p>
                     <ul>
                         <li>Número de páginas: <b>407</b></li>
