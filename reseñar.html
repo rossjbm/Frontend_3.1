@@ -25,6 +25,9 @@
 
 </head>
 <body>
+    <!--conexion con javascript-->
+    <script src="Scripts JS/fuctions.js"></script>
+    
     <header>
         <nav>
             <div class="nav-elemento">            
@@ -44,43 +47,44 @@
         <form method="post">
             <div class="form-grupo">
                 <div class="form-subgrupo1">
-                    <label for="titulo"><b>Título del libro</b></label>
-                    <input class="form-subgrupo1-input" type="text" required name="titulo" placeholder="Ingresa el título...">
+                    <label for="libro"><b>Título del libro</b></label>
+                    <input id="libro" class="form-subgrupo1-input" type="text" required name="titulo" placeholder="Ingresa el título...">
                 </div>
                 <div class="form-subgrupo1">
-                    <label for="autor"><b>Autor del libro</b></label>
-                    <select class="form-subgrupo1-input" required name="autor">
+                    <label for="autor_libro"><b>Autor del libro</b></label>
+                    <select id="autor_libro" class="form-subgrupo1-input" required name="autor">
                         <option value="ColleenHoover">Colleen Hoover</option>
-                        <option value="MarissaMeyer">Marissa Meyer</option>
+                        <option value="1">Marissa Meyer</option>
                         <option value="NeilGaiman">Neil Gaiman</option>
+                        <option value="DotHutchison">Dot Hutchison</option>
                         <option value="DotHutchison">Dot Hutchison</option>
                     </select>
                 </div>
                 <div class="form-subgrupo1">
-                    <label for="fecha_culminación"><b>Culminación de la lectura</b></label>
-                    <input class="form-subgrupo1-input" type="date" name="fecha_culminación">
+                    <label for="fecha_culminacion"><b>Culminación de la lectura</b></label>
+                    <input id="fecha_culminacion" class="form-subgrupo1-input" type="date" name="fecha_culminación">
                 </div>
             </div>
             <div class="form-grupo">
                 <div class="form-subgrupo2">
                     <p class="form-subgrupo-titulo"><b>¡Califícalo!</b></p>
                     <div class="form-calificacion">
-                        <input type="radio" name="calificacion" value="1">
+                        <input type="radio" id="calificacion" name="calificacion" value="1">
                         <label for="calificacion">1 <span class="material-symbols-outlined">star_rate</span></label>
-                        <input type="radio" name="calificacion" value="2">
+                        <input type="radio" id="calificacion" name="calificacion" value="2">
                         <label for="calificacion">2 <span class="material-symbols-outlined">star_rate</span></label>
-                        <input type="radio" name="calificacion" value="3">
+                        <input type="radio" id="calificacion" name="calificacion" value="3">
                         <label for="calificacion">3 <span class="material-symbols-outlined">star_rate</span></label>
-                        <input type="radio" name="calificacion" value="4">
+                        <input type="radio" id="calificacion" name="calificacion" value="4">
                         <label for="calificacion">4 <span class="material-symbols-outlined">star_rate</span></label>
-                        <input type="radio" name="calificacion" value="5">
+                        <input type="radio" id="calificacion" name="calificacion" value="5">
                         <label for="calificacion">5 <span class="material-symbols-outlined">star_rate</span></label>
                     </div>
                 </div>
                 <div class="form-subgrupo2">
                     <label class="form-subgrupo-titulo" for="resena"><b>¡Escribe tu reseña!</b></label>
                     <br>
-                    <textarea cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena" required></textarea>
+                    <textarea id="resena" cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena" required></textarea>
                 </div>
             </div>
             <div class="form-grupo-boton">
